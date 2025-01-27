@@ -1,0 +1,3 @@
+return {
+	"NAlexPear/Spacegray.nvim",
+}
