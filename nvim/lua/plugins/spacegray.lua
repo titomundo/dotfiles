@@ -1,3 +1,0 @@
-return {
-	"NAlexPear/Spacegray.nvim",
-}
