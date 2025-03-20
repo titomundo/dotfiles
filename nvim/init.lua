@@ -4,7 +4,7 @@ vim.opt.expandtab = true
 vim.bo.softtabstop = 2
 
 vim.opt.number = true
-vim.opt.relativenumber= true
+vim.opt.relativenumber = true
 
 vim.g.mapleader = ","
 
@@ -25,4 +25,3 @@ require("lazy").setup("plugins")
 
 vim.cmd("set background=dark")
 vim.cmd("colorscheme gruvbox")
-
