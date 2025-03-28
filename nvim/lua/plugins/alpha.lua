@@ -4,11 +4,11 @@ return {
         local alpha = require("alpha")
         local dashboard = require("alpha.themes.dashboard")
         dashboard.section.header.val = {
-            [[					          :PB@Bk:					           ]],
-            [[                ,jB@@B@B@B@BBL.								 ]],
-            [[             7G@B@B@BMMMMMB@B@B@Nr					   ]],
-            [[         :kB@B@@@MMOMOMOMOMMMM@B@B@B1,				 ]],
-            [[     :5@B@B@B@BBMMOMOMOMOMOMOMM@@@B@B@BBu.		 ]],
+            [[					  :PB@Bk:					 ]],
+            [[                ,jB@@B@B@B@BBL.				 ]],
+            [[             7G@B@B@BMMMMMB@B@B@Nr		     ]],
+            [[         :kB@B@@@MMOMOMOMOMMMM@B@B@B1,		 ]],
+            [[     :5@B@B@B@BBMMOMOMOMOMOMOMM@@@B@B@BBu.     ]],
             [[  70@@@B@B@B@BXBBOMOMOMOMOMOMMBMPB@B@B@B@B@Nr	 ]],
             [[G@@@BJ iB@B@@  OBMOMOMOMOMOMOM@2  B@B@B. EB@B@S]],
             [[@@BM@GJBU.  iSuB@OMOMOMOMOMOMM@OU1:  .kBLM@M@B@]],
@@ -22,14 +22,14 @@ return {
             [[@BBM@BPNi   LMEB@OMMMM@B@MMOMM@BZM7   rEqB@MBB@]],
             [[B@@@BM  B@B@B  qBMOMB@B@B@BMOMBL  B@B@B  @B@B@M]],
             [[ J@@@@PB@B@B@B7G@OMBB.   ,@MMM@qLB@B@@@BqB@BBv ]],
-            [[    iGB@,i0@M@B@MMO@E  :  M@OMM@@@B@Pii@@N:		 ]],
-            [[       .   B@M@B@MMM@B@B@B@MMM@@@M@B					 ]],
-            [[           @B@B.i@MBB@B@B@@BM@::B@B@					 ]],
-            [[           B@@@ .B@B.:@B@ :B@B  @B@O 					 ]],
-            [[             :0 r@B@  B@@ .@B@: P:						 ]],
-            [[                 vMB :@B@ :BO7								 ]],
-            [[                     ,B@B 										 ]],
+            [[    iGB@,i0@M@B@MMO@E  :  M@OMM@@@B@Pii@@N:    ]],
+            [[       .   B@M@B@MMM@B@B@B@MMM@@@M@B			 ]],
+            [[           @B@B.i@MBB@B@B@@BM@::B@B@			 ]],
+            [[           B@@@ .B@B.:@B@ :B@B  @B@O 			 ]],
+            [[             :0 r@B@  B@@ .@B@: P:			 ]],
+            [[                 vMB :@B@ :BO7				 ]],
+            [[                     ,B@B 					 ]],
         }
         alpha.setup(dashboard.opts)
     end,
-}
+} 
