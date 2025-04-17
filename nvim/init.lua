@@ -6,6 +6,8 @@ vim.bo.softtabstop = 4
 vim.opt.number = true
 vim.opt.relativenumber = true
 
+vim.opt.termguicolors = true
+
 vim.g.mapleader = ","
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
