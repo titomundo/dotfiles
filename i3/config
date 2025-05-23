@@ -55,7 +55,7 @@ bindsym $mod+Return exec kitty
 bindsym $mod+b exec firefox
 
 # abrir thunar
-bindsym $mod+n exec nautilus 
+bindsym $mod+n exec thunar 
 
 # tomar screenshots
 bindsym Print exec flameshot gui
@@ -65,7 +65,7 @@ bindsym $mod+Shift+q kill
 
 # wallpaper y terminales transparentes
 # exec_always feh --bg-fill ~/Pictures/wallpaper/desktop.jpg
-exec_always feh --bg-fill ~/Pictures/wallpaper/room.png
+exec_always feh --bg-fill ~/Pictures/wallpaper/desktop.jpg
 exec_always --no-startup-id picom -b
 
 #rebindear CAPSLOCK a CTRL
@@ -206,8 +206,8 @@ bar {
   status_command i3status
 }
 
-for_window [class="^·*"] border pixel 1
+for_window [class="^·*"] border pixel 2
 
-gaps inner 9
+gaps inner 5
 
-gaps outer 3
+gaps outer 2
