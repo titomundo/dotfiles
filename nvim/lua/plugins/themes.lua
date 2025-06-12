@@ -26,4 +26,7 @@ return {
 			vim.cmd("colorscheme jb")
 		end,
 	},
+    {
+        "yuttie/sublimetext-spacegray.vim"
+    }
 }
