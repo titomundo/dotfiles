@@ -2,15 +2,11 @@ vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
 vim.bo.softtabstop = 4
-
-vim.opt.number = true
 vim.opt.relativenumber = true
-
-vim.opt.termguicolors = true
-
 vim.g.mapleader = ","
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+
 if not vim.loop.fs_stat(lazypath) then
 	vim.fn.system({
 		"git",
@@ -21,9 +17,10 @@ if not vim.loop.fs_stat(lazypath) then
 		lazypath,
 	})
 end
+
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup("plugins")
 
 vim.cmd("set background=dark")
-vim.cmd("colorscheme spacegray-dark")
+vim.cmd("colorscheme gruvbox")
