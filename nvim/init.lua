@@ -3,6 +3,7 @@ vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
 vim.bo.softtabstop = 4
 vim.opt.relativenumber = true
+
 vim.g.mapleader = ","
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
@@ -23,4 +24,4 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup("plugins")
 
 vim.cmd("set background=dark")
-vim.cmd("colorscheme gruvbox")
+vim.cmd("colorscheme retrobox")
