@@ -16,7 +16,7 @@ return {
 					"cssls", -- apt install npm
 					"jdtls",
 					"jedi_language_server", -- si falla la instalación, correr apt install -y python3-venv
-					"intelephense",
+					--"intelephense",
 				},
 			})
 		end,
@@ -51,7 +51,9 @@ return {
 			vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
 			vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
 			vim.keymap.set("n", "ca", vim.lsp.buf.code_action, {})
-            vim.keymap.set('n', 'cd', function() vim.diagnostic.open_float() end)
+			vim.keymap.set("n", "cd", function()
+				vim.diagnostic.open_float()
+			end)
 		end,
 	},
 }

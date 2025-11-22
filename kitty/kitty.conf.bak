@@ -30,9 +30,3 @@ italic_font      auto
 bold_italic_font auto
 
 include current-theme.conf
-
-
-# BEGIN_KITTY_THEME
-# Ayu
-include current-theme.conf
-# END_KITTY_THEME

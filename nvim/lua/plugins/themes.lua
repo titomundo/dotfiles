@@ -4,20 +4,20 @@ return {
 		priority = 1000,
 		config = true,
 		opts = {
-            contrast = 'dark'
-        },
+			transparent_mode = true;
+		},
 	},
 	{
-	    "yuttie/sublimetext-spacegray.vim"
+		"yuttie/sublimetext-spacegray.vim",
 	},
-    {
-        "EdenEast/nightfox.nvim",
-        config = function ()
-            require('nightfox').setup({
-               options = {
-                    transparent = true
-                }
-            })
-        end
-    }
+	{
+		"EdenEast/nightfox.nvim",
+		config = function()
+			require("nightfox").setup({
+				options = {
+					transparent = true,
+				},
+			})
+		end,
+	},
 }
