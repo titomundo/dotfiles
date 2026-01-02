@@ -1,4 +1,4 @@
-vim.opt.tabstop = 3
+vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
 vim.bo.softtabstop = 4
 vim.opt.number = true
@@ -6,9 +6,14 @@ vim.opt.relativenumber = true
 vim.opt.wrap = false
 
 vim.g.mapleader = " "
-vim.keymap.set("n", "<leader>e", ":Ex<CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "<leader>e", ":Ex .<CR>", { noremap = true, silent = true })
 vim.g.netrw_banner = 0
-vim.g.netrw_liststyle = 1
+vim.g.netrw_liststyle = 3
+vim.g.netrw_sort_options = "i"
+vim.keymap.set("n", "<C-h>", ":wincmd h<CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "<C-j>", ":wincmd j<CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "<C-k>", ":wincmd k<CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "<C-l>", ":wincmd l<CR>", { noremap = true, silent = true })
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 
@@ -31,4 +36,4 @@ vim.keymap.set("n", "<leader>ff", builtin.find_files, {}) --buscar archivo
 vim.keymap.set("n", "<leader>fw", builtin.live_grep, {}) --buscar palabra
 
 vim.cmd("set background=dark")
-vim.cmd("colorscheme nightfox")
+vim.cmd("colorscheme gruvbox")
