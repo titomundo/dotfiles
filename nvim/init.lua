@@ -6,10 +6,7 @@ vim.opt.relativenumber = true
 vim.opt.wrap = false
 
 vim.g.mapleader = " "
-vim.keymap.set("n", "<leader>e", ":Ex .<CR>", { noremap = true, silent = true })
-vim.g.netrw_banner = 0
-vim.g.netrw_liststyle = 3
-vim.g.netrw_sort_options = "i"
+
 vim.keymap.set("n", "<C-h>", ":wincmd h<CR>", { noremap = true, silent = true })
 vim.keymap.set("n", "<C-j>", ":wincmd j<CR>", { noremap = true, silent = true })
 vim.keymap.set("n", "<C-k>", ":wincmd k<CR>", { noremap = true, silent = true })
@@ -34,6 +31,7 @@ require("lazy").setup("plugins")
 local builtin = require("telescope.builtin")
 vim.keymap.set("n", "<leader>ff", builtin.find_files, {}) --buscar archivo
 vim.keymap.set("n", "<leader>fw", builtin.live_grep, {}) --buscar palabra
+vim.keymap.set("n", "<leader>e", ":Neotree toggle<CR>", {noremap = true, silent = true})
 
-vim.cmd("set background=dark")
-vim.cmd("colorscheme gruvbox")
+vim.o.background = "dark" -- or "light" for light mode
+vim.cmd([[colorscheme gruvbox-material]])

@@ -1,9 +1,13 @@
 return {
 	{
-		"ellisonleao/gruvbox.nvim",
+		"sainnhe/gruvbox-material",
+		lazy = false,
 		priority = 1000,
-		config = true,
-		opts = {},
+		config = function()
+			vim.g.gruvbox_material_enable_italic = true
+			--vim.g.gruvbox_material_foreground = "default"
+			vim.g.gruvbox_material_transparent_background = 1
+		end,
 	},
 	{
 		"nvim-lualine/lualine.nvim",
@@ -12,7 +16,7 @@ return {
 		},
 		config = function()
 			require("lualine").setup({
-				options = { theme = "gruvbox" },
+				options = { theme = "gruvbox-material" },
 			})
 		end,
 	},
