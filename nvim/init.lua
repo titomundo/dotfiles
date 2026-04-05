@@ -4,6 +4,7 @@ vim.bo.softtabstop = 4
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.wrap = false
+vim.opt.termguicolors = true
 
 vim.g.mapleader = " "
 
@@ -31,7 +32,7 @@ require("lazy").setup("plugins")
 local builtin = require("telescope.builtin")
 vim.keymap.set("n", "<leader>ff", builtin.find_files, {}) --buscar archivo
 vim.keymap.set("n", "<leader>fw", builtin.live_grep, {}) --buscar palabra
-vim.keymap.set("n", "<leader>e", ":Neotree toggle<CR>", {noremap = true, silent = true})
+vim.keymap.set("n", "<leader>e", ":Ex<CR>", {noremap = true, silent = true})
 
 vim.o.background = "dark" -- or "light" for light mode
 vim.cmd([[colorscheme gruvbox-material]])
