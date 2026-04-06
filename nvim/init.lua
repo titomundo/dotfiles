@@ -7,7 +7,6 @@ vim.opt.wrap = false
 vim.opt.termguicolors = true
 
 vim.g.mapleader = " "
-
 vim.keymap.set("n", "<C-h>", ":wincmd h<CR>", { noremap = true, silent = true })
 vim.keymap.set("n", "<C-j>", ":wincmd j<CR>", { noremap = true, silent = true })
 vim.keymap.set("n", "<C-k>", ":wincmd k<CR>", { noremap = true, silent = true })
@@ -32,7 +31,13 @@ require("lazy").setup("plugins")
 local builtin = require("telescope.builtin")
 vim.keymap.set("n", "<leader>ff", builtin.find_files, {}) --buscar archivo
 vim.keymap.set("n", "<leader>fw", builtin.live_grep, {}) --buscar palabra
-vim.keymap.set("n", "<leader>e", ":Ex<CR>", {noremap = true, silent = true})
+vim.keymap.set("n", "<leader>e", ":Neotree toggle float<CR>", { noremap = true, silent = true })
+
+vim.filetype.add({
+	pattern = {
+		[".*%.blade%.php"] = "blade",
+	},
+})
 
 vim.o.background = "dark" -- or "light" for light mode
-vim.cmd([[colorscheme gruvbox-material]])
+vim.cmd([[colorscheme gruvbox]])

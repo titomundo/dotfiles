@@ -1,4 +1,5 @@
 return {
+	{ "ellisonleao/gruvbox.nvim", priority = 1000, config = true },
 	{
 		"sainnhe/gruvbox-material",
 		lazy = false,
@@ -15,7 +16,7 @@ return {
 		},
 		config = function()
 			require("lualine").setup({
-				options = { theme = "gruvbox-material" },
+				options = { theme = "gruvbox" },
 			})
 		end,
 	},
