@@ -1,6 +1,18 @@
 return {
   {
-    "gruvbox-community/gruvbox",
+    "ellisonleao/gruvbox.nvim",
+    priority = 1000,
+    config = true,
+    bold = true,
+    opts = {
+      contrast = "hard",
+      italic = {
+        strings = false,
+        emphasis = false,
+        comments = false,
+        operators = false,
+      },
+    }
   },
   {
     "nvim-lualine/lualine.nvim",
